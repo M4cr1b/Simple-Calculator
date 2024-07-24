@@ -3,15 +3,19 @@
 using namespace std;
 
 int main() {
+
+    //Declaration of variables
     int num1, num2;
     double add, sub, mult, div, exp, mod;
     string operation;
 
+    //Accepting input from the user
     cout<< "Enter the first number: ";
     cin>> num1;
     cout<< "Enter the second number: ";
     cin>> num2;
 
+    //Printing the operations available
     cout<< "Arithmetic Operations:"<<endl;
     cout<< "1. Addition"<<endl;
     cout<< "2. Subtraction"<<endl;
@@ -20,9 +24,11 @@ int main() {
     cout<< "5. Exponent"<<endl;
     cout<< "6. Modulus"<<endl;
 
+    //Accepting operation input
     cout<< "Enter the arithmetic operation: ";
     cin>> operation;
 
+    //Conditional statements that are executed if a particular operation is selected
     if(operation == "Addition" || operation == "1"){
         add = num1 + num2;
         cout<< "The sum of the two numbers is "<<add<<endl;
